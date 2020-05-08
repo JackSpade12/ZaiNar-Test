@@ -6,8 +6,7 @@
 #
 #  Author : Ophir Sweiry
 #  Date : 4/2/2020
-#  Version : 2.0.1
-
+#  Version : 2.0.2
 
 import unittest
 import customer_details
