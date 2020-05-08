@@ -1,5 +1,6 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+#pytest customer_details.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html 
 
 name: Python application
 
@@ -34,4 +35,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest customer_details.py
-        #pytest customer_details.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html 
+       
