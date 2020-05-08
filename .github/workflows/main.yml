@@ -19,7 +19,7 @@ jobs:
     - name: trigger single Job
       uses: appleboy/jenkins-action@master
       with:
-        url: "http://52.70.68.70:8080/job/TestZaiNar/build?token=github"
+        url: "http://52.70.68.70:8080"
         user: "ophirsw"
         token: ${{ secrets.Jenkins }}
         job: "TestZaiNar"
