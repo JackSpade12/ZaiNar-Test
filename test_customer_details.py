@@ -40,18 +40,5 @@ class test_customer_details(unittest.TestCase):
         self.assertEqual(counter_items,18)
         self.assertEqual(total_amounts,1090)
 
-
-    # function: test_sanity
-    # descripton: checks customer Indiana jones on small subset dataset
-    def test_full(self):
-        start_time = time.time()
-        _customer_details = customer_details.customer_details([None,"Indiana","Jones"])    
-        counter_customers, counter_invoices, counter_items, total_amounts =  _customer_details.main()
-        self.assertTrue(time.time()- start_time < 90)
-        self.assertEqual(counter_customers,1)
-        self.assertEqual(counter_invoices,2)
-        self.assertEqual(counter_items,18)
-        self.assertEqual(total_amounts,1090)
-
 if __name__ == '__main__':
     unittest.main()
