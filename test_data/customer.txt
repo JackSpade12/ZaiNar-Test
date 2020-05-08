@@ -1,0 +1,5 @@
+“CUST00499999”,”Liam”,”Jackson”
+“CUST00500000”,”Indiana”,”Jones”
+“CUST00500001”,”George”,”Lucas”
+“CUST00500000”,”Noah”,”White”
+“CUST00500001”,”William”,”Harris”
