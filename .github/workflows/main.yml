@@ -21,7 +21,7 @@ jobs:
       with:
         url: "http://52.70.68.70:8080/job/TestZaiNar/build?token=github_trigger_build"
         user: "ophirsw"
-        token: ${{ secrets.TOKEN }}
-        job: "foobar"
+        token: ${{ secrets.Jenkins }}
+        job: "TestZaiNar"
 
 
