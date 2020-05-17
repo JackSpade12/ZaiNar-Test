@@ -1,27 +1,15 @@
-# This is a basic workflow to help you get started with Actions
+on: [push]
 
-name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build:
-    name: Build
+  hello_world_job:
     runs-on: ubuntu-latest
+    name: A job to say hello
     steps:
-    - name: trigger single Job
-      uses: appleboy/jenkins-action@master
+    - name: Hello world action step
+      id: hello
+      uses: actions/hello-world-javascript-action@v1
       with:
-        url: "http://52.70.68.70:8080"
-        user: "ophirsw"
-        token: ${{ secrets.Jenkins }}
-        job: "TestZaiNar"
-
-
+        who-to-greet: 'Mona the Octocat'
+    # Use the output from the `hello` step
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
